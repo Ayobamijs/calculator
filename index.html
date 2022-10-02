@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <style>
     .cal {
         justify-items: center;
         text-align: center;
         padding-top: 80px;
-        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
-        width: 60%;
+        /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+        width: 60%; */
 
     }
 
     .calnumber {
         width: 100%;
         /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6); */
-        /* width: 90%; */
+        /* width: 90%;  */
         text-align: center;
     }
 
@@ -37,39 +40,57 @@
 
 <body style="background-color: rgb(26, 35, 48);">
     <!-- <form action="" style="justify-content: center; text-align: center; padding: 200px 100px;"> -->
-    <div class="cal">
+    <div class="container cal">
         <input type="text" size="40" id="inp"
-            style="line-height: 40px; text-align:center; background-color:black; color:aliceblue"><br>
+            style="line-height: 40px; text-align:center; background-color:black; color:aliceblue; border-color: white; border-radius: 10px;"><br>
         <!-- </form> -->
-        <div class="calnumber">
+        <div class="container calnumber">
 
-            <button onclick="clicka(7)" style="font-weight: 900;">7</button>
-            <button onclick="clicka(8)" style="font-weight: 900;">8</button>
-            <button onclick="clicka(9)" style="font-weight: 900;">9</button>
-            <button onclick="clearAll()" style="background-color: blue;">C</button><br>
-            <button onclick="clicka(4)" style="font-weight: 900;" style="font-weight: 900;">4</button>
-            <button onclick="clicka(5)" style="font-weight: 900;">5</button>
-            <button onclick="clicka(6)" style="font-weight: 900;">6</button>
-            <button onclick="clicka('+')" style="font-weight: 900;">+</button>
+            <button onclick="clicka(7)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; border-radius: 5px; font-size: larger;">7</button>
+            <button onclick="clicka(8)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">8</button>
+            <button onclick="clicka(9)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">9</button>
+            <button onclick="clearAll()"
+                style="background-color: blue; width: 3%; border-radius: 5px; font-size: larger;">C</button><br>
+            <button onclick="clicka(4)" style="font-weight: 900;"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">4</button>
+            <button onclick="clicka(5)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">5</button>
+            <button onclick="clicka(6)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">6</button>
+            <button onclick="clicka('+')"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">+</button>
             <br>
-            <button onclick="clicka(1)" style="font-weight: 900;">1</button>
-            <button onclick="clicka(2)" style="font-weight: 900;">2</button>
-            <button onclick="clicka(3)" style="font-weight: 900;">3</button>
-            <button onclick="clicka('-')" style="font-weight: 900;">-</button>
+            <button onclick="clicka(1)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">1</button>
+            <button onclick="clicka(2)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">2</button>
+            <button onclick="clicka(3)"
+                style="font-weight: 900; border-radius: 10px; width: 3%; font-size: larger;">3</button>
+            <button onclick="clicka('-')"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">-</button>
             <br>
-            <button onclick="clicka('.')" style="font-weight: 900;">.</button>
-            <button onclick="clicka(0)" style="font-weight: 900;">0</button>
-            <button onclick="clicka('/')" style="font-weight: 900;">/</button>
-            <button onclick="clicka('*')" style="font-weight: 900;">*</button>
+            <button onclick="clicka('.')"
+                style="font-weight: 900; width: 3%; border-radius: 5px;font-size: larger;">.</button>
+            <button onclick="clicka(0)"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">0</button>
+            <button onclick="clicka('/')"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">/</button>
+            <button onclick="clicka('*')"
+                style="font-weight: 900; width: 3%; border-radius: 5px; font-size: larger;">*</button>
             <br>
-            <button onclick="clicka('Reset')"
-                style="background-color: blue; width: 10%; font-weight: 900;">RESET</button>
-            <button onclick="equalto('=')" style="background-color: red; width: 10%;font-weight: 900;">=</button>
+            <button onclick="clearAll('Reset')"
+                style="background-color: blue; width: 10%; font-weight: 900; border-radius: 30px; font-size: larger;">RESET</button>
+            <button onclick="equalto('=')"
+                style="background-color: red; width: 10%;font-weight: 900; border-radius: 30px;">=</button>
         </div>
 
 
     </div>
     <script src=" calculate.js"></script>
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
